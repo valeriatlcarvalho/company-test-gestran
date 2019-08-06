@@ -1,0 +1,15 @@
+<nav class="navbar navbar-dark bg-dark">
+  <span class="navbar-brand mb-0 h1">Gestran - {{title}}</span>
+</nav>
+
+<div class="container d-flex align-content-start align-content-stretch flex-wrap">
+  <div *ngFor="let product of products" class="d-flex align-content-stretch col-4 my-3">
+    <div class="card">
+      <img [src]="product.pictureUrl" class="card-img-top img-fluid" [alt]="product.name">
+      <div class="card-body">
+        <h5 class="card-title d-flex justify-content-between"><strong>{{product.name}}</strong> <span>R$ {{product.price}}</span></h5>
+        <p class="card-text">{{product.description}}</p>
+      </div>
+    </div>
+  </div>
+</div>
