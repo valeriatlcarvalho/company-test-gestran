@@ -1,5 +1,5 @@
-#Start the application:
+#### Start the application:
 
-#npm install
+npm install
 
-#ng serve --open
+ng serve --open
